@@ -1,5 +1,3 @@
-#!/usr/bin/python3
-str = "Python is an interpreted, interactive, object-oriented programming\
- language that combines remarkable power with very clear syntax"
-str = str[39:67] + str[107:112] + str[:6]
-print(str)
+VimCrypt~03!ãµœíÁÉ‰7F	?ït%ÜÉ‹—ó25·«Âw˜À¯–êÅP<ÛúhLqŒ'&7_«ApÖàˆOÀn=â€'î
+=s¢PUAç)>¯Ü¦Å²m_ñßÉ[Â
+”: ¾gê oÈPìÊÇvd ú0ºEÅwÈ	×4E"¨‚­¡IÒ;„aËî"<x¼r²¯ul$Ê%9=W6®Ç&|·_¤ œ¿©¸„yI¬<ğàØ•®W®‰îtÄ]xù¢Û­ø¶M–ö8x¿Š¿ UëŞ#IZá¥œ¢©«™K:ô¨]o
