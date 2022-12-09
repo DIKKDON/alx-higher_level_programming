@@ -1,10 +1,6 @@
 #!/usr/bin/python3
-
-
 def simple_delete(a_dictionary, key=""):
-    """
-    A function that deletes a key in a dictionary.
-    """
-    if key in a_dictionary:
-        del a_dictionary[key]
-    return 
+    if not key or key not in a_dictionary:
+        return a_dictionary
+    a_dictionary.pop(key)
+    return a_dictionary 
