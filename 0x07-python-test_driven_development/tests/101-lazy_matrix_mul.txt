@@ -1,0 +1,37 @@
+
+
+
+
+	>>> lazy_matrix_mul = __import__('101-lazy_matrix_mul').lazy_matrix_mul
+	
+	>>> a = [[1,4],[6,78]]
+	>>> b = [[1,4],[6,78]]
+	>>> lazy_matrix_mul(a, b)	#doctest: +NORMALIZE_WHITESPACE
+	array([[  25,  316],
+           [ 474, 6108]])
+           
+	>>> a = [[1,4,3],[6,78]]
+	>>> b = [[1,4],[6,78]]
+	>>> lazy_matrix_mul(a, b)	
+	Traceback (most recent call last):
+	TypeError: each row of m_a must be of the same size
+	
+	>>> a = []
+	>>> b = [[1,4],[6,78]]
+	>>> lazy_matrix_mul(a, b)	
+	Traceback (most recent call last):
+	ValueError: m_a can't be empty
+	
+	>>> a = [[1,4],[6,78]]
+	>>> b = [[]]
+	>>> lazy_matrix_mul(a, b)	
+	Traceback (most recent call last):
+	ValueError: m_b can't be empty
+	
+	>>> a = [[1,4],[6,78]]
+	>>> b = [[],[]]
+	>>> lazy_matrix_mul(a, b)	
+	array([], shape=(2, 0), dtype=float64)
+           
+           
+      

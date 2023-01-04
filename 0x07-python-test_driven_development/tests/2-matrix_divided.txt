@@ -1,0 +1,51 @@
+
+
+
+	>>> matrix_divided = __import__('2-matrix_divided').matrix_divided
+	
+	>>> matrix_divided("", 3)	#doctest: +NORMALIZE_WHITESPACE
+	Traceback (most recent call last):
+	TypeError: matrix must be a matrix (list of lists) of integers/floats
+	
+	>>> matrix_divided(3, 3)	#doctest: +NORMALIZE_WHITESPACE
+	Traceback (most recent call last):
+	TypeError: matrix must be a matrix (list of lists) of integers/floats
+	
+	>>> matrix_divided([1,2,3], 3)	#doctest: +NORMALIZE_WHITESPACE
+	Traceback (most recent call last):
+	TypeError: matrix must be a matrix (list of lists) of integers/floats
+	
+	>>> matrix_divided(["3"], 3)	#doctest: +NORMALIZE_WHITESPACE
+	Traceback (most recent call last):
+	TypeError: matrix must be a matrix (list of lists) of integers/floats
+	
+	>>> matrix_divided([["6"],[]], 3)	#doctest: +NORMALIZE_WHITESPACE
+	Traceback (most recent call last):
+	TypeError: matrix must be a matrix (list of lists) of integers/floats
+	
+	>>> matrix_divided([[1,4,65,7,89],[6,78,"45",0,8,78,77]], 3)	#doctest: +NORMALIZE_WHITESPACE
+	Traceback (most recent call last):
+	TypeError: matrix must be a matrix (list of lists) of integers/floats
+	
+	>>> matrix_divided([[[1,4,65,7],[4,6,78,0,8]]], 10)	#doctest: +NORMALIZE_WHITESPACE
+	Traceback (most recent call last):
+	TypeError: matrix must be a matrix (list of lists) of integers/floats
+	
+	>>> matrix_divided([[],[]], 3)
+	[[], []]
+
+	
+	>>> matrix_divided([[1,2,3],[3,4,4]], 3)
+	[[0.33, 0.67, 1.0], [1.0, 1.33, 1.33]]
+	
+	>>> matrix_divided([[],[2,3,45]], 3)	#doctest: +NORMALIZE_WHITESPACE
+	Traceback (most recent call last):
+	TypeError: Each row of the matrix must have the same size
+	
+	>>> matrix_divided([[2,3,45]], 3)
+	[[0.67, 1.0, 15.0]]
+	
+	>>> matrix_divided([[1,2,43,4,3],[2,3,45]], 2)	#doctest: +NORMALIZE_WHITESPACE
+	Traceback (most recent call last):
+	TypeError: Each row of the matrix must have the same size
+	
